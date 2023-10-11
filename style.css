@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Righteous&family=Roboto:wght@100&display=swap');
+
+:root{
+    --principal-color: rgb(0, 110, 255);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Righteous', cursive;
+}
+
+body{
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--principal-color);
+    box-shadow: 0px 0px 10px 0px black;
+    max-width: 100%;
+    height: 60px;
+}
+
+@media(max-width:1000px){
+.header{
+    box-shadow: 0px 0px 10px 0px black;
+    height: 60px;}
+}
+
+.logo{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.titulo{ 
+    color: white;  
+    text-shadow: 3px 3px black;
+}
+
+.subtitulo{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    text-shadow: 3px 3px black;
+}
+
+@media(max-width:1000px){
+.subtitulo{
+    font-size: 25px;
+    padding-top: 15%;}
+}
+
+.text{
+    color: white;
+    font-size: 22px;
+    line-height: 25px;
+    padding: 20px;
+}
+
+@media(max-width:1000px){
+.text{
+    font-size: 18px;}
+}
+
+.container{
+    margin: 5% auto;
+    width: 700px;
+    border-radius: 5px;
+    border: 3px groove white;
+    background-color: black;
+}
+
+@media(max-width:1000px){
+.container{
+    width: 330px;
+    border: 2px groove white;}
+}
+
+.saiba{
+    font-size: 16px;
+    padding: 12px;
+    margin: 3% auto;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    text-shadow: 1px 1px rgb(0, 110, 255);
+    box-shadow: 0px 0px 2px 2px rgb(0, 110, 255);
+}
+
+@media(max-width:1000px){
+.saiba{
+    margin: 5% auto 10% auto;}
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal-color);
+    max-width: 100%;
+    height: 40px;
+    margin-top: 5%;
+    box-shadow: 0px 0px 10px 0px black;
+}
